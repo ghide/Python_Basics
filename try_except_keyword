@@ -1,0 +1,45 @@
+<!-- try:
+
+< code that could generate error>
+
+except:
+  < code that runs if error raised>
+
+  #we can use the try and except keywords to handle exceptions. If an exception is raised,
+  in the try blokc, the except block will run. -->
+
+
+  <!-- try:
+   num = int(input("Please enter a number: "))
+ except ValueError:
+   print("Oops!  That was no valid number.  Try again...")
+
+   Usually it's better to ecept a specific exception and handle it, rather than catch all exceptions.
+   or rather than hadling any possible exception that could occur.. -->
+
+
+   <!-- LBYL (Look Before You Leap) vs EAFP (It's Easier to Ask Forgiveness than Permission)
+   Coding style where you explicitly test for pre- conditions before making calls or "leaping". 
+   Characterized by lots of if statements. Example -->
+   
+   <!-- year = input("Enter a year: ")
+   if year.isnumeric(): #"look" or check to see if year is numeric
+     year = int(year)  #"Leap" convert year to integer once we know it's safe or number.
+   else:
+     print("Enter a valid year") -->
+
+
+
+
+  <!-- EAFP (It's Easier to Ask Forgiveness than Permission) vs LBYL (Look Before You Leap)
+
+   "Assuming things exist or will work, and catch exceptions if you are wrong". 
+   Coding style characterized by lots of try/except blocks. Example.
+
+
+try:
+     year = input("Enter a year: ") # At this line the code is assuming that it'll work and Try convertingyear to an integer.
+except ValueError:    # At this line of the code the code is assuming that it won't work. Therefore it will catch the error or exception. The code runs if year can't be 
+                       be cast to an integer.
+      year = 2025 -->
+
